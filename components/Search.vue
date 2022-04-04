@@ -57,6 +57,9 @@ export default {
     width: 100%;
     padding-left: 0.5rem;
     font-size: 1.5rem;
+    &:focus {
+      outline: none;
+    }
   }
 }
 </style>
