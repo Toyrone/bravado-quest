@@ -1,0 +1,38 @@
+.grid {
+  display: grid;
+
+  &__layout {
+    @extend .grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0 2rem;
+    @include query('mobile') {
+      grid-gap: 0 1rem;
+    }
+    @include grid-generator(12);
+    &--10 {
+      grid-template-columns: repeat(10, 1fr);
+      @include grid-generator(10);
+    }
+    @include gap(10);
+    &--mb {
+      @include query('mobile') {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+  &--responsive {
+    @include query('mobile') {
+      display: block;
+    }
+  }
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  @include query('mobile') {
+    padding: 0 1rem;
+  }
+}

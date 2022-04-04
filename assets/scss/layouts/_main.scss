@@ -1,0 +1,21 @@
+.main {
+  margin: 4rem auto;
+  height: 643px;
+  max-height: 100%;
+  overflow-y: auto;
+  max-width: 100%;
+  width: 564px;
+  background: #fff;
+  &__layout {
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 1.75rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.highlight {
+  background: #fff73b;
+}

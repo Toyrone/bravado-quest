@@ -1,0 +1,68 @@
+// Change font family
+body {
+  font-size: $base-font-size;
+  font-family: 'Roboto', sans-serif;
+  background: #eeeeee;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 1.33;
+  @include query('mobile') {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+h1,
+h2,
+h3 {
+  color: inherit;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.28;
+}
+
+p,
+ul,
+li {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.62;
+  font-weight: 400;
+}
+
+a {
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+}
+p {
+  color: inherit;
+  font-size: 1.25rem;
+  @include query('mobile') {
+    font-size: 14px;
+  }
+}

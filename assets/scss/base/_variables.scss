@@ -1,0 +1,17 @@
+// calculate how much to offset the left or right within a container
+// where container size is 1200px and 1rem is the container padding
+$zero-position: calc((100vw - 1240px) / 2 * (-1));
+$absolute-zero-position: calc((100vw - 1240px) / 2 * (-1) - 1rem);
+
+$roboto: 'Roboto', sans-serif;
+
+// sizes
+$max-width: 1240px;
+$base-font-size: 100%;
+
+// media query breakpoints
+$breakpoints: (
+  'mobile': 480px,
+  'tablet': 768px,
+  'desktop': 1024px,
+) !default;
